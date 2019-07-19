@@ -1,5 +1,5 @@
 body{
-    font-family: 'Indie Flower', cursive, Georgia, 'Times New Roman', Times, serif;
+    font-family: cursive, Georgia, 'Times New Roman', Times, serif;
 }
 .title-underline{
     width: 140px;
@@ -13,7 +13,7 @@ body{
     background-color: white;
 }
 #editor{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(238, 39, 39, 0.5)), url(../img/item7.jpeg)center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(238, 39, 39, 0.5)), url(../img/item7.jpeg)center/cover no-repeat;
 }
 #ordered-list{
    list-style: none;
@@ -32,12 +32,30 @@ body{
     border-radius: 5px;
 }
 .style{
-    border-right: 5px solid gray;
-    border-left: 5px solid gray;
+    border-right: 3px solid gray;
+    border-left: 3px solid gray;
 }
 #description, #article{
     background-color: whitesmoke;
 }
-#filler, #welcome{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(238, 39, 39, 0.5)), url(../img/half-moon.jpeg)center/cover no-repeat fixed;
+#filler{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(12, 2, 2, 0.5)), url(../img/half-moon.jpeg)center/cover no-repeat fixed;
+}
+.nav-link{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: white;
+    border-bottom: 2px solid gray;
+}
+.navbar-brand{
+    font-size: 20px;
+    margin-right: 80px;
+}
+.carousel-item p{
+    font-weight: bold;
+}
+#welcome{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(12, 2, 2, 0.5)),url(../img/item1.jpeg)center/cover no-repeat fixed;
 }

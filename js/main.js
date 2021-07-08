@@ -14,7 +14,6 @@ increaseCount.addEventListener("click", ()=> {
 });
 
 decreaseCount.addEventListener("click", ()=> {
-    console.log(currentValue)
     if ( currentValue > 0 ){
         currentValue--
         count.textContent = currentValue;

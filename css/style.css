@@ -1,0 +1,73 @@
+:root {
+    --white: #F5F5F5;
+    --brown: #B29269;
+    --royal_blue: #0D2C54;
+    --green: #008000;
+}
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.wrapper, .counter_box, .counter_header, .counter_header h1, .counter_screen, .counter_screen p, .counter_buttons {
+    background-color: unset;
+}
+.wrapper{
+    margin: 1rem auto;
+    height: 95vh;
+    width: 600px;
+    padding: 3rem 0rem;
+    background-image: url("../image/counter_bg.jpg");
+}
+.counter_box{
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    border: 2px solid var(--white);
+    border-radius: 4px;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0px 7px 9px 3px rgba(0,0,0,0.74);
+    background-image: url("../image/counter_bg.jpg");
+}
+.counter_header h1{
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.counter_screen{
+    height: 200px;
+    font-size: 11rem;
+    font-weight: bold;
+    color: var(--green);
+    margin: 1rem 0;
+}
+.counter_buttons{
+    display: flex;
+    flex-direction: column;
+}
+.count_btn{
+    margin: 0 auto;
+    width: fit-content;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: var(--royal_blue);
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 250px) and (max-width: 700px) {
+    .wrapper{
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+    }
+}
